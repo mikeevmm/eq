@@ -30,6 +30,10 @@ If `eq` detects that you did not change your file, it quits.
 
 The `--density` option determines the quality of your PDF to PNG conversion. Set a higher number for a crisper image. (Default value is 300.)
 
+## Details
+
+A temporary project is created, by default, in `/tmp`. You can change this directory by setting the `$EQ_PROJ_DIR` environment variable.
+
 ## Contributing
 
 Pull requests are welcome. Issues are not guaranteed to be addressed. `eq` is
