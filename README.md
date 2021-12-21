@@ -57,4 +57,5 @@ You can find a copy of the licence under `LICENCE`.
 💕 If you like and use `eq`, consider
 [buying me a coffee](https://www.paypal.me/miguelmurca/2.50).
 
+[pipx]: https://github.com/pypa/pipx
 [GPLv2]: https://tldrlegal.com/license/gnu-general-public-license-v2
