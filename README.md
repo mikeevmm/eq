@@ -32,7 +32,19 @@ The `--density` option determines the quality of your PDF to PNG conversion. Set
 
 ## Details
 
+### Temporary Project Location
+
 A temporary project is created, by default, in `/tmp`. You can change this directory by setting the `$EQ_PROJ_DIR` environment variable.
+
+### ImageMagick Error
+
+```
+...: attempt to perform an operation not allowed by the securiy policy `PDF' @...
+```
+
+If you see the above message, then ImageMagick is blocking the conversion from PDF to PNG due to a security vulnerability in Ghostscript. However, this vulnerability was patched in Ghostscript 9.24, so if your software is up-to-date, you can safely unblock this conversion.
+
+[See this StackOverflow answer for a fix.](https://stackoverflow.com/a/59193253)
 
 ## Contributing
 
