@@ -16,11 +16,15 @@ r'''\documentclass[border=5pt]{standalone}
 \usepackage{placeins}
 \usepackage{physics}
 
+% \gather* in standalone; see tex.stackexchange.com/146699
+\newcommand{\diff}{\mathop{}\!d}
+\renewenvironment{gather*}{$\gathered}{\endgathered$}
+
 \begin{document}
 
-\(\displaystyle
-    % Your equation here
-\)
+\begin{gather*}
+    % Your equations here
+\end{gather*}
 
 \end{document}''')
 
