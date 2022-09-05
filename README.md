@@ -32,10 +32,6 @@ The `--density` option determines the quality of your PDF to PNG conversion. Set
 
 ## Details
 
-### Temporary Project Location
-
-A temporary project is created, by default, in `/tmp`. You can change this directory by setting the `$EQ_PROJ_DIR` environment variable.
-
 ### ImageMagick Error
 
 ```
