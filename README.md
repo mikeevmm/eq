@@ -16,7 +16,7 @@ pip install git+https://github.com/mikeevmm/eq/
 
 ## Requirements
 
-`eq` requires `xclip`, `imagemagick`, and `pdflatex`.
+`eq` requires `xclip`, `imagemagick`, and `latexmk` (**Linux**) or `nircmd`, `imagemagick`, `latexmk`, and `ghostscript` (**Windows**). 
 
 ## How to Use
 
