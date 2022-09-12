@@ -120,8 +120,7 @@ def main():
             old_content = new_content
 
             # Do the rendering, and copy to the clipboard
-            # Run pdflatex thrice, just for good measure
-            failed = False
+            # Use latexmk to ensure full compilation
             result = sp.run(
                 [latexmk, '-pdf', f'-output-directory="{proj_dir}"', file_name])
             if result.returncode != 0:
