@@ -128,9 +128,6 @@ def main():
                 # Something went wrong with the compilation (user error?)
                 # Loop back to edition.
                 error('Something went wrong with compiling the project.')
-                failed = True
-                break
-            if failed:
                 continue # to another edition pass.
             
             # Finished producing a PDF.
@@ -146,7 +143,6 @@ def main():
                 error('Something went wrong with converting the PDF to a PNG.')
                 log('Press any key to go back to edition.')
                 input()
-                failed = True
                 continue # to another edition pass.
             # else: success
 
@@ -157,7 +153,6 @@ def main():
                       'clipboard.')
                 log('Press any key to go back to edition.')
                 input()
-                failed = True
                 continue # to another edition pass.
 
             # loop to another edition pass
